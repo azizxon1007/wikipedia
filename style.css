@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: serif;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.logo {
+  position: absolute;
+  top: 5%;
+}
+.logo img {
+  width: 500px;
+}
+.searchPart {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 50%;
+  width: 600px;
+  height: 50px;
+  border: 1px solid rgb(173, 171, 171);
+  border-radius: 50px;
+  overflow: hidden;
+}
+#searchText {
+  width: 450px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0 30px;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+}
+.searchPart i {
+  width: 55px;
+  height: 5px;
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0;
+  margin: 20px 0;
+}
+.searchResult {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 50%;
+  top: 65%;
+  height: auto;
+  border: 1px solid rgb(173, 171, 171);
+}
+.searchResultContent {
+  width: 100%;
+  height: 150px;
+}
+.searchResultContent .title {
+  color: rgb(7, 7, 124);
+  font-size: 25px;
+}
+.searchResultContent .link {
+  color: rgb(3, 93, 9);
+  font-size: 20px;
+}
+.searchResultContent p {
+  color: rgb(64, 63, 63);
+}
+
+
+
+@media (max-width: 800px) {
+  .searchPart {
+    width: 500px;
+  }
+  .searchResult {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .searchPart {
+    top: 60%;
+  }
+  .searchPart {
+    width: 400px;
+  }
+  .searchResult {
+    width: 70%;
+    margin-top: 50px;
+  }
+  .searchResultContent {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .searchPart {
+    width: 90%;
+  }
+  .searchResult {
+    width: 90%;
+  }
+}
